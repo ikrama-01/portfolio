@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travel Advisor - Find nearby restaurants, hotels, and attractions">
+    <meta property="og:title" content="Travel Advisor Project | Creative Developer Portfolio">
+    <meta property="og:description" content="Travel Advisor is a dynamic web application designed to assist users in exploring nearby restaurants, hotels, and tourist attractions">
+    <meta property="og:image" content="assets/travel-advisor-preview.jpg">
+    <title>Travel Advisor Project | Creative Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="project-details.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body data-theme="dark">
+    <header class="header">
+        <nav class="nav">
+            <div class="logo"><a href="index.html">Portfolio</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#tech">Tech Stack</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <input type="checkbox" id="dark-mode-toggle" class="toggle-checkbox">
+                <label for="dark-mode-toggle" class="toggle-label">
+                    <span class="toggle-ball"></span>
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </label>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-hero lazy-section">
+            <div class="container">
+                <h1>🗺️ Travel Advisor</h1>
+                <p class="project-tagline">Discover nearby restaurants, hotels, and attractions based on your location</p>
+                <div class="project-links">
+                    <a href="https://travel-advisory-one.vercel.app/" target="_blank" class="project-link">
+                        <img src="assets/link-icon.svg" alt="Link" class="link-icon">
+                        Live Demo
+                    </a>
+                    <a href="https://github.com/ikrama-01/travel_advisory" target="_blank" class="project-link">
+                        <img src="assets/github-icon.svg" alt="GitHub" class="link-icon">
+                        Source Code
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-overview lazy-section">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <p>Travel Advisor is a dynamic web application designed to assist users in exploring nearby restaurants, hotels, and tourist attractions based on their current location. Leveraging ReactJS and Material-UI for the frontend, and integrating with the Travel Advisor API, this project provides a seamless user experience with a modern interface.</p>
+                <p>With Travel Advisor, users can effortlessly discover and plan their travel experiences, making it an indispensable tool for wanderlust enthusiasts and travelers alike.</p>
+                
+            </div>
+        </section>
+
+        <section class="key-features lazy-section">
+            <div class="container">
+                <h2>🔥 Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🌍</div>
+                        <h3>Google Maps Integration</h3>
+                        <p>Interactive map with location-based search functionality</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🍽️</div>
+                        <h3>Discover Places</h3>
+                        <p>Find top-rated restaurants, hotels, and attractions near you</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📍</div>
+                        <h3>Advanced Filtering</h3>
+                        <p>Filter results by type and rating for a customized experience</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⛅</div>
+                        <h3>Weather Data</h3>
+                        <p>Real-time weather information for your selected location</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Responsive UI</h3>
+                        <p>Fully responsive and modern UI using Material UI components</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-stack-section lazy-section">
+            <div class="container">
+                <h2>🛠️ Tech Stack</h2>
+                <div class="tech-stack-grid">
+                    <div class="tech-item">
+                        <span class="tech-name">React</span>
+                        <p class="tech-desc">Built with React Hooks for state management and component architecture</p>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Material-UI</span>
+                        <p class="tech-desc">Modern component library for consistent and attractive UI elements</p>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Google Maps API</span>
+                        <p class="tech-desc">Integration for interactive maps and geolocation services</p>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">RapidAPI</span>
+                        <p class="tech-desc">Used Travel Advisor and OpenWeather APIs for location and weather data</p>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Vercel</span>
+                        <p class="tech-desc">Deployed and hosted for optimal performance and reliability</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="implementation-details lazy-section">
+            <div class="container">
+                <h2>💡 Implementation Details</h2>
+                <div class="implementation-content">
+                    <div class="implementation-text">
+                        <h3>Architecture</h3>
+                        <p>The application follows a component-based architecture with React, separating concerns for maintainability and reusability. The state management is handled using React hooks, particularly useState and useEffect for handling API calls and user interactions.</p>
+                        
+                        <h3>Data Integration</h3>
+                        <p>Data is fetched from multiple sources:
+                            <ul>
+                                <li>Google Maps API for map rendering and location services</li>
+                                <li>Travel Advisor API for fetching details about restaurants, hotels, and attractions</li>
+                                <li>OpenWeather API for real-time weather information</li>
+                            </ul>
+                        </p>
+
+                        <h3>User Experience</h3>
+                        <p>The application prioritizes user experience with:
+                            <ul>
+                                <li>Intuitive UI with familiar Google Maps interface</li>
+                                <li>Responsive design that works on all devices</li>
+                                <li>Fast loading times with optimized API calls</li>
+                                <li>Interactive elements like filters and map markers</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="back-to-projects lazy-section">
+            <div class="container">
+                <a href="index.html#projects" class="back-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5"></path>
+                        <path d="M12 19l-7-7 7-7"></path>
+                    </svg>
+                    Back to Projects
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Creative Developer. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Lazy loading for sections
+            const lazyElements = document.querySelectorAll('.lazy-section');
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            lazyElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            // Ensure all links are working
+            const allLinks = document.querySelectorAll('a');
+            allLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    if (this.getAttribute('href').startsWith('#')) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href').substring(1);
+                        scrollToSection(targetId);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

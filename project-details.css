@@ -1,0 +1,764 @@
+/* Project Details Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Navbar Logo */
+.nav .logo a {
+    color: white !important;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* Project Hero Section */
+.project-hero {
+    padding: 8rem 0 4rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    text-align: center;
+}
+
+.project-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.project-tagline {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.project-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+}
+
+.link-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Project Overview Section */
+.project-overview {
+    padding: 5rem 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.project-overview h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.project-overview p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-image {
+    margin-top: 3rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-container {
+    width: 100%;
+    min-height: 400px;
+    background-color: var(--card-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container.no-image {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container.no-image::after {
+    content: attr(data-content, '🗺️ Travel Advisor');
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.performance-monitoring .image-container.no-image::after {
+    content: '🔬 Performance Monitoring API';
+}
+
+.parkeazy .image-container.no-image::after {
+    content: '🚗 ParkEazy';
+}
+
+.therapy .image-container.no-image::after {
+    content: '🧠 VR Mental Health Therapy';
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Key Features Section */
+.key-features {
+    padding: 5rem 0;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+.key-features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: var(--bg-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid var(--card-border);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.feature-card p {
+    line-height: 1.6;
+}
+
+/* Tech Stack Section */
+.tech-stack-section {
+    padding: 5rem 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.tech-stack-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.tech-stack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.tech-item {
+    padding: 2rem;
+    border-radius: 10px;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.tech-name {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    color: white;
+    border-radius: 5px;
+}
+
+.tech-desc {
+    line-height: 1.6;
+}
+
+/* Implementation Details Section */
+.implementation-details {
+    padding: 5rem 0;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+.implementation-details h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.implementation-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.implementation-text h3 {
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem;
+    color: var(--primary-color);
+}
+
+.implementation-text p {
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.implementation-text ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.implementation-text li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Back to Projects Button */
+.back-to-projects {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: var(--bg-color);
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.back-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.back-button svg {
+    transition: transform 0.3s ease;
+}
+
+.back-button:hover svg {
+    transform: translateX(-5px);
+}
+
+/* Results Section Styles */
+.results-section {
+    padding: 5rem 0;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+.results-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.results-table {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    overflow-x: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.results-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-color);
+    overflow: hidden;
+}
+
+.results-table th, 
+.results-table td {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--card-border);
+}
+
+.results-table th {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    color: white;
+    font-weight: 600;
+    position: relative;
+}
+
+.results-table tbody tr {
+    transition: all 0.3s ease;
+}
+
+.results-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.results-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.results-note {
+    text-align: center;
+    max-width: 800px;
+    margin: 2rem auto 0;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Learning Outcomes Section */
+.learning-outcomes {
+    padding: 5rem 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.learning-outcomes h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.outcome-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.outcomes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.outcome-card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid var(--card-border);
+}
+
+.outcome-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.outcome-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.outcome-card p {
+    line-height: 1.6;
+}
+
+/* Project Screenshots Gallery */
+.project-screenshots {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-screenshots h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.screenshots-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.screenshot-item {
+    background: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid var(--card-border);
+}
+
+.screenshot-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.screenshot-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid var(--card-border);
+}
+
+.screenshot-caption {
+    padding: 1rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+/* Image Preview Overlay */
+.image-preview-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    backdrop-filter: blur(5px);
+}
+
+.preview-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+.close-preview {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-preview:hover {
+    color: var(--accent-color);
+}
+
+.screenshot-img {
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .project-hero h1 {
+        font-size: 2.8rem;
+    }
+    
+    .project-tagline {
+        font-size: 1.2rem;
+    }
+    
+    .features-grid, .tech-stack-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-links {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .results-table {
+        margin: 0 1rem 2rem;
+    }
+    
+    .results-table th, 
+    .results-table td {
+        padding: 0.8rem 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .outcomes-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .screenshots-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 414px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+    
+    .project-hero {
+        padding: 6rem 0 3rem;
+    }
+    
+    .project-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .project-tagline {
+        font-size: 1rem;
+    }
+    
+    .project-overview h2, 
+    .key-features h2, 
+    .tech-stack-section h2, 
+    .implementation-details h2 {
+        font-size: 2rem;
+    }
+    
+    .feature-card, .tech-item {
+        padding: 1.5rem;
+    }
+    
+    .tech-name {
+        font-size: 1.1rem;
+    }
+    
+    .implementation-text h3 {
+        font-size: 1.5rem;
+    }
+    
+    .results-table th, 
+    .results-table td {
+        padding: 0.6rem 0.4rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Architecture Section */
+.architecture-section {
+    max-width: 900px;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.architecture-image {
+    margin-top: 1rem;
+}
+
+.architecture-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Future Scope Section */
+.future-scope {
+    padding: 5rem 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.future-scope h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.scope-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.scope-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+}
+
+.scope-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.scope-card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid var(--card-border);
+}
+
+.scope-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.scope-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.scope-card p {
+    line-height: 1.6;
+}
+
+/* Therapy Modules Section */
+.therapy-modules {
+    max-width: 900px;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.therapy-modules h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.modules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.module-card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid var(--card-border);
+    text-align: left;
+}
+
+.module-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.module-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.module-card p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.module-features {
+    list-style-type: none;
+    padding-left: 1.5rem;
+}
+
+.module-features li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.module-features li::before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: -1.5rem;
+}
+
+.module-note {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2.5rem 2rem 2rem;
+    background: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--card-border);
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    position: relative;
+    text-align: center;
+}
+
+.module-note::before {
+    content: "";
+    font-size: 1.5rem;
+    position: absolute;
+    top: -1.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bg-color);
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px var(--bg-color);
+}
+
+/* End of module-note styles */ 

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CalmConnect - A VR-Based Mental Health Therapy Application">
+    <meta property="og:title" content="VR Mental Health Therapy Project | Creative Developer Portfolio">
+    <meta property="og:description" content="Immersive mental health therapy on Android using VR, Unity, and Firebase — built for affordability, accessibility, and real results">
+    <meta property="og:image" content="assets/mental-health-preview.jpg">
+    <title>VR Mental Health Therapy Project | Creative Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="project-details.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body data-theme="dark">
+    <header class="header">
+        <nav class="nav">
+            <div class="logo"><a href="index.html">Portfolio</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#tech">Tech Stack</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <input type="checkbox" id="dark-mode-toggle" class="toggle-checkbox">
+                <label for="dark-mode-toggle" class="toggle-label">
+                    <span class="toggle-ball"></span>
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </label>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-hero lazy-section">
+            <div class="container">
+                <h1>🧠 VR-Based Mental Health Therapy</h1>
+                <p class="project-tagline">Immersive mental health therapy on Android using VR, Unity, and Firebase — built for affordability, accessibility, and real results</p>
+                <div class="project-links">
+                    <a href="https://github.com/ikrama-01/CalmConnect" target="_blank" class="project-link">
+                        <img src="assets/github-icon.svg" alt="GitHub" class="link-icon">
+                        Source Code
+                    </a>
+                    <a href="https://drive.google.com/file/d/1P2Q0wdaaYyMu_V-5JuftoHs9gHsmQX2W/view?usp=sharing" target="_blank" class="project-link">
+                        <img src="assets/apk-icon.svg" alt="APK" class="link-icon">
+                        Download APK
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-overview lazy-section">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <p>This innovative VR-based Android application offers immersive therapy experiences for individuals suffering from ADHD, claustrophobia, and anxiety-related stress. Built using Unity (C#) and Firebase, and optimized for use with affordable VR boxes, it bridges the gap between traditional therapy and tech-based accessibility.</p>
+                
+                <div class="therapy-modules">
+                    <h3>Therapy Modules</h3>
+                    <div class="modules-grid">
+                        <div class="module-card">
+                            <div class="module-icon">🧘</div>
+                            <h4>Meditation & Relaxation</h4>
+                            <p>Guided breathing and calm environments like open calming greenery spaces</p>
+                        </div>
+                        <div class="module-card">
+                            <div class="module-icon">🎯</div>
+                            <h4>ADHD Cognitive Tasks</h4>
+                            <p>Interactive focus and attention-building challenges including a ball tracking game for children</p>
+                        </div>
+                        <div class="module-card">
+                            <div class="module-icon">🚪</div>
+                            <h4>Claustrophobia Exposure</h4>
+                            <p>Gradual, controlled confined-space environments</p>
+                        </div>
+                    </div>
+                    <p class="module-note">💡<br>Note<br>All therapy sessions are immersive, interactive, and structured to promote self-regulation, anxiety reduction, and therapeutic engagement.</p>
+                </div>
+                
+                <div class="architecture-section">
+                    <h3>System Architecture</h3><br>
+                    <div class="architecture-image">
+                        <img src="assets/CalmConnectArchitechture.png" alt="VR Therapy System Architecture" onclick="openImagePreview(this.src)">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="key-features lazy-section">
+            <div class="container">
+                <h2>🔑 Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Progress Tracking</h3>
+                        <p>Real-time session progress tracking via Firebase integration</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎧</div>
+                        <h3>Guided Experience</h3>
+                        <p>User-friendly onboarding with guided audio instructions</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💰</div>
+                        <h3>Cost-Effective</h3>
+                        <p>Accessible via low-cost VR headset (no need for Oculus/HTC Vive)</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h3>Exposure Therapy</h3>
+                        <p>VR-based desensitization therapy for phobias and anxiety</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🧩</div>
+                        <h3>ADHD Support</h3>
+                        <p>ADHD-specific task modules for behavioral training</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👁️</div>
+                        <h3>Minimal UI</h3>
+                        <p>Distraction-free focus with immersive VR experience</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-stack-section lazy-section">
+            <div class="container">
+                <h2>🧰 Tech Stack</h2>
+                <div class="tech-stack-grid">
+                    <div class="tech-item">
+                        <span class="tech-name">Unity (C#)</span>
+                        <p class="tech-desc">Core game engine for creating immersive 3D VR experiences and environments</p>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Firebase</span>
+                        <p class="tech-desc">Backend services for authentication, real-time database, and session tracking</p>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Android</span>
+                        <p class="tech-desc">Target platform with WebXR support for VR Box compatibility</p>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Mobile VR Box</span>
+                        <p class="tech-desc">Hardware utilizing stereoscopic rendering and gyroscope-based movement</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="implementation-details lazy-section">
+            <div class="container">
+                <h2>💡 Highlights & Innovations</h2>
+                <div class="implementation-content">
+                    <div class="implementation-text">
+                        <h3>Accessibility First</h3>
+                        <p>The application was built with a focus on making mental health therapy accessible to everyone:</p>
+                        <ul>
+                            <li>Affordable mental health therapy for low-resource environments</li>
+                            <li>Fully immersive therapy experience built for Android</li>
+                            <li>Works with inexpensive VR headsets that use smartphones</li>
+                        </ul>
+                        
+                        <h3>Technical Innovation</h3>
+                        <p>The project leverages several technical innovations:</p>
+                        <ul>
+                            <li>Modular design with extensibility for future mental health modules</li>
+                            <li>Adaptive input with VR headset touch + gyro-based movement</li>
+                            <li>Real-time analytics and session data capture via Firebase</li>
+                            <li>Optimized 3D environments to run smoothly on mobile hardware</li>
+                        </ul>
+
+                        <h3>Clinical Impact</h3>
+                        <p>Initial feedback has shown promising results:</p>
+                        <ul>
+                            <li>Users with ADHD reported better focus and less impulsivity</li>
+                            <li>Claustrophobic users felt increased comfort with exposure control</li>
+                            <li>Therapists noted ease of integration into guided therapy sessions</li>
+                            <li>Feedback praised its affordability and accessibility for non-clinical users</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="future-scope lazy-section">
+            <div class="container">
+                <h2>🚀 Future Scope</h2>
+                <div class="scope-content">
+                    <p class="scope-intro">The VR therapy application has significant potential for expansion and enhancement:</p>
+                    <div class="scope-grid">
+                        <div class="scope-card">
+                            <h3>AI Integration</h3>
+                            <p>Add AI-driven personalization and adaptive therapy paths based on user progress and responses</p>
+                        </div>
+                        <div class="scope-card">
+                            <h3>Additional Modules</h3>
+                            <p>Expand therapy modules to address anxiety, depression, and PTSD with specialized environments</p>
+                        </div>
+                        <div class="scope-card">
+                            <h3>Remote Monitoring</h3>
+                            <p>Integrate companion mobile app for therapists to remotely monitor patient progress</p>
+                        </div>
+                        <div class="scope-card">
+                            <h3>Group Therapy</h3>
+                            <p>Add multiplayer/group therapy modes for addressing social anxiety in a controlled environment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="back-to-projects lazy-section">
+            <div class="container">
+                <a href="index.html#projects" class="back-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5"></path>
+                        <path d="M12 19l-7-7 7-7"></path>
+                    </svg>
+                    Back to Projects
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Creative Developer. All rights reserved.</p>
+    </footer>
+
+    <div class="image-preview-overlay" id="imagePreviewOverlay" onclick="closeImagePreview()">
+        <span class="close-preview">&times;</span>
+        <img class="preview-image" id="previewImage">
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Lazy loading for sections
+            const lazyElements = document.querySelectorAll('.lazy-section');
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            lazyElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            // Ensure all links are working
+            const allLinks = document.querySelectorAll('a');
+            allLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    if (this.getAttribute('href').startsWith('#')) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href').substring(1);
+                        scrollToSection(targetId);
+                    }
+                });
+            });
+        });
+
+        // Image preview functionality
+        function openImagePreview(src) {
+            const overlay = document.getElementById('imagePreviewOverlay');
+            const previewImage = document.getElementById('previewImage');
+            
+            previewImage.src = src;
+            overlay.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeImagePreview() {
+            const overlay = document.getElementById('imagePreviewOverlay');
+            overlay.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+</body>
+</html> 

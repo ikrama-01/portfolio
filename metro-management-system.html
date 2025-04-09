@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Metro Management System - Secure Ticketing Backend">
+    <meta property="og:title" content="Metro Management System Project | Creative Developer Portfolio">
+    <meta property="og:description" content="Efficient, secure, and user-friendly metro ticketing and wallet system — powered by Java Spring Boot and MySQL">
+    <meta property="og:image" content="assets/metro-management-preview.jpg">
+    <title>Metro Management System Project | Creative Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="project-details.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body data-theme="dark">
+    <header class="header">
+        <nav class="nav">
+            <div class="logo"><a href="index.html">Portfolio</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#tech">Tech Stack</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <input type="checkbox" id="dark-mode-toggle" class="toggle-checkbox">
+                <label for="dark-mode-toggle" class="toggle-label">
+                    <span class="toggle-ball"></span>
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </label>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-hero lazy-section">
+            <div class="container">
+                <h1>🚇 Metro Management System</h1>
+                <p class="project-tagline">Efficient, secure, and user-friendly metro ticketing and wallet system — powered by Java Spring Boot and MySQL</p>
+                <div class="project-links">
+                    <a href="https://github.com/ikrama-01/MetroManagementSystem" target="_blank" class="project-link">
+                        <img src="assets/github-icon.svg" alt="GitHub" class="link-icon">
+                        Source Code
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-overview lazy-section">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <p>The Metro Management System is a robust backend-driven application that powers metro ticket booking, wallet-based fare payments, and role-based user operations. Built entirely using Java (Spring Boot) and MySQL, it supports secure JWT authentication, admin controls, and smooth user interactions for a modern metro service.</p>
+                <p>This project lays the groundwork for a scalable metro platform where users can register, log in, recharge wallets, and book tickets — while admins manage routes, fares, and monitor usage.</p>
+                
+                <div class="architecture-section">
+                    <h3>Database Schema</h3><br>
+                    <div class="architecture-image">
+                        <img src="assets/Metro_Management_System.png" alt="Metro Management System Database Schema" onclick="openImagePreview(this.src)">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="key-features lazy-section">
+            <div class="container">
+                <h2>🔑 Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔐</div>
+                        <h3>JWT Authentication</h3>
+                        <p>Secure JSON Web Token based authentication and authorization system</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3>Role-based Access</h3>
+                        <p>Different dashboards and permissions for admin and regular users</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🧾</div>
+                        <h3>Ticket Booking</h3>
+                        <p>Complete system with route selection and fare management</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💰</div>
+                        <h3>Wallet Functionality</h3>
+                        <p>Secure wallet top-ups and automatic fare deductions</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🚦</div>
+                        <h3>Admin Controls</h3>
+                        <p>Tools to manage routes, stations, fares and monitor ticket logs</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📄</div>
+                        <h3>Clean Architecture</h3>
+                        <p>Modular services, controllers, repositories, and data transfer objects</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-stack-section lazy-section">
+            <div class="container">
+                <h2>🧰 Tech Stack</h2>
+                <div class="tech-stack-grid">
+                    <div class="tech-item">
+                        <span class="tech-name">Java Spring Boot</span>
+                        <p class="tech-desc">Core backend framework with REST APIs, JWT Auth, and DTO-layered architecture</p>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">MySQL</span>
+                        <p class="tech-desc">Relational database with optimized schema for users, routes and tickets</p>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Spring Security</span>
+                        <p class="tech-desc">Authentication and authorization with JWT token implementation</p>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">React</span>
+                        <p class="tech-desc">Frontend framework (in development) for user and admin interfaces</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="implementation-details lazy-section">
+            <div class="container">
+                <h2>💡 Highlights & Innovations</h2>
+                <div class="implementation-content">
+                    <div class="implementation-text">
+                        <h3>Database Design</h3>
+                        <p>The project utilizes a carefully designed relational database schema:</p>
+                        <ul>
+                            <li><strong>users:</strong> id, username, email, password, role (admin/user), wallet_balance</li>
+                            <li><strong>stations:</strong> id, name, code</li>
+                            <li><strong>routes:</strong> id, source_id, destination_id, fare, distance</li>
+                            <li><strong>tickets:</strong> id, user_id, source_id, destination_id, fare, created_at</li>
+                        </ul>
+                        <p>Foreign keys are used for route and ticket associations, wallet_balance is deducted during ticket booking and updated after recharge, and created_at in tickets stores time of booking for future tracking.</p>
+                        
+                        <h3>Security Implementation</h3>
+                        <p>The project features robust security measures:</p>
+                        <ul>
+                            <li>Full JWT-based secure backend with no external auth dependencies</li>
+                            <li>Password encryption using industry-standard hashing algorithms</li>
+                            <li>Role-based access control for different user types</li>
+                            <li>Secure endpoints for sensitive operations like wallet recharges</li>
+                        </ul>
+
+                        <h3>System Architecture</h3>
+                        <p>Built with industry-standard practices:</p>
+                        <ul>
+                            <li>Clean separation of concerns using MVC architecture</li>
+                            <li>Data Transfer Objects for secure data transmission</li>
+                            <li>Repository pattern for database operations</li>
+                            <li>Service layer for business logic implementation</li>
+                            <li>Minimal resource consumption, easy to host & scale</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="future-scope lazy-section">
+            <div class="container">
+                <h2>🚀 Future Scope</h2>
+                <div class="scope-content">
+                    <p class="scope-intro">The Metro Management System has significant potential for expansion:</p>
+                    <div class="scope-grid">
+                        <div class="scope-card">
+                            <h3>Frontend Development</h3>
+                            <p>Build & deploy the React-based frontend with full feature integration</p>
+                        </div>
+                        <div class="scope-card">
+                            <h3>QR Ticketing</h3>
+                            <p>Add QR-code ticketing and PDF invoice generation for paperless experience</p>
+                        </div>
+                        <div class="scope-card">
+                            <h3>Analytics Dashboard</h3>
+                            <p>Integrate admin analytics dashboard for route usage and ticket trends</p>
+                        </div>
+                        <div class="scope-card">
+                            <h3>Payment Integration</h3>
+                            <p>Enable recharge via UPI APIs and other payment gateways</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="back-to-projects lazy-section">
+            <div class="container">
+                <a href="index.html#projects" class="back-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5"></path>
+                        <path d="M12 19l-7-7 7-7"></path>
+                    </svg>
+                    Back to Projects
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Creative Developer. All rights reserved.</p>
+    </footer>
+
+    <div class="image-preview-overlay" id="imagePreviewOverlay" onclick="closeImagePreview()">
+        <span class="close-preview">&times;</span>
+        <img class="preview-image" id="previewImage">
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Lazy loading for sections
+            const lazyElements = document.querySelectorAll('.lazy-section');
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            lazyElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            // Ensure all links are working
+            const allLinks = document.querySelectorAll('a');
+            allLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    if (this.getAttribute('href').startsWith('#')) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href').substring(1);
+                        scrollToSection(targetId);
+                    }
+                });
+            });
+        });
+
+        // Image preview functionality
+        function openImagePreview(src) {
+            const overlay = document.getElementById('imagePreviewOverlay');
+            const previewImage = document.getElementById('previewImage');
+            
+            previewImage.src = src;
+            overlay.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeImagePreview() {
+            const overlay = document.getElementById('imagePreviewOverlay');
+            overlay.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+</body>
+</html> 

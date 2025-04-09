@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ParkEazy - Smart Parking Management with Automated Gate Security">
+    <meta property="og:title" content="ParkEazy Project | Creative Developer Portfolio">
+    <meta property="og:description" content="A cross-platform parking solution with QR-based access control, real-time vehicle tracking, and user-friendly access management">
+    <meta property="og:image" content="assets/parkeazy-preview.jpg">
+    <title>ParkEazy Project | Creative Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="project-details.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body data-theme="dark">
+    <header class="header">
+        <nav class="nav">
+            <div class="logo"><a href="index.html">Portfolio</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#tech">Tech Stack</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <input type="checkbox" id="dark-mode-toggle" class="toggle-checkbox">
+                <label for="dark-mode-toggle" class="toggle-label">
+                    <span class="toggle-ball"></span>
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </label>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-hero lazy-section">
+            <div class="container">
+                <h1>🚗 ParkEazy – Smart Parking Management</h1>
+                <p class="project-tagline">A cross-platform parking solution with QR-based access control, real-time vehicle tracking, and user-friendly access management</p>
+                <div class="project-links">
+                    <a href="https://github.com/rahulpandharkar/parkeazy" target="_blank" class="project-link">
+                        <img src="assets/github-icon.svg" alt="GitHub" class="link-icon">
+                        Source Code
+                    </a>
+                    <a href="https://drive.google.com/file/d/1X-kc6gFzgjcSO5agKLQglF41HhGNJkXl/view" target="_blank" class="project-link">
+                        <img src="assets/video-icon.svg" alt="Video" class="link-icon">
+                        Demo Video
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-overview lazy-section">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <p>ParkEazy is a smart parking system that improves security and efficiency by automating entry through QR code scanning. Built as a college-level project, it enables users to register their vehicle, generate a unique QR code, and gain access via automated gate control — all without manual verification.</p>
+                <p>The system is designed for web use and built with Flutter, Python, and MySQL, making it a versatile and robust solution for campus parking management.</p>
+                
+            </div>
+        </section>
+
+        <section class="key-features lazy-section">
+            <div class="container">
+                <h2>✨ Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">👤</div>
+                        <h3>User Management</h3>
+                        <p>Comprehensive registration and login system for vehicle owners</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>QR Code Generation</h3>
+                        <p>Unique QR codes linked to license plates for secure access</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🚪</div>
+                        <h3>Automated Gate Access</h3>
+                        <p>Seamless entry and exit through QR scanning validation</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Admin Dashboard</h3>
+                        <p>Comprehensive interface for managing users and access logs</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📝</div>
+                        <h3>Audit Trail</h3>
+                        <p>Complete record of vehicle entry and exit for security purposes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-stack-section lazy-section">
+            <div class="container">
+                <h2>🔧 Tech Stack</h2>
+                <div class="tech-stack-grid">
+                    <div class="tech-item">
+                        <span class="tech-name">Flutter (Web)</span>
+                        <p class="tech-desc">Cross-platform framework for building the frontend interface</p>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Python + PHP</span>
+                        <p class="tech-desc">Backend languages for business logic and server-side processing</p>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">MySQL</span>
+                        <p class="tech-desc">Database system for storing user data, vehicle information, and access records</p>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">XAMPP</span>
+                        <p class="tech-desc">Local server environment for development and deployment</p>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">QR Technology</span>
+                        <p class="tech-desc">Generation and scanning of QR codes for secure vehicle identification</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="implementation-details lazy-section">
+            <div class="container">
+                <h2>💡 Project Details</h2>
+                <div class="implementation-content">
+                    <div class="implementation-text">
+                        <h3>System Architecture</h3>
+                        <p>ParkEazy follows a three-tier architecture:</p>
+                        <ul>
+                            <li>Presentation Layer: Flutter web application for user interface</li>
+                            <li>Application Layer: Python and PHP backend for business logic</li>
+                            <li>Data Layer: MySQL database for storage and retrieval</li>
+                        </ul>
+                        
+                        <h3>Core Functionality</h3>
+                        <p>The system's workflow consists of:</p>
+                        <ul>
+                            <li>User registration with vehicle and personal details</li>
+                            <li>QR code generation linked to the registered vehicle</li>
+                            <li>QR scanning at entry/exit points</li>
+                            <li>Automated gate control based on validation</li>
+                            <li>Entry/exit logging and audit trail maintenance</li>
+                            <li>Administrative oversight through dashboard</li>
+                        </ul>
+
+                        <h3>Future Enhancements</h3>
+                        <p>The project has significant potential for expansion:</p>
+                        <ul>
+                            <li>Mobile app support for Android and iOS platforms</li>
+                            <li>Integration of facial recognition for enhanced security</li>
+                            <li>Connection to Smart City infrastructure</li>
+                            <li>Real-time admin alerts and remote gate control capabilities</li>
+                            <li>Integration with payment systems for commercial parking scenarios</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="learning-outcomes lazy-section">
+            <div class="container">
+                <h2>📈 Learning Outcomes</h2>
+                <div class="outcomes-content">
+                    <p class="outcome-intro">Through the development of ParkEazy, we gained valuable experience in several areas:</p>
+                    <div class="outcomes-grid">
+                        <div class="outcome-card">
+                            <h3>Full-Stack Development</h3>
+                            <p>Designed and implemented both frontend and backend components, creating a cohesive system that handles complex interactions.</p>
+                        </div>
+                        <div class="outcome-card">
+                            <h3>IoT Concepts</h3>
+                            <p>Applied Internet of Things principles by connecting digital systems (QR codes) to physical actions (gate control).</p>
+                        </div>
+                        <div class="outcome-card">
+                            <h3>Security Implementation</h3>
+                            <p>Developed secure authentication and authorization systems to protect sensitive user and vehicle data.</p>
+                        </div>
+                        <div class="outcome-card">
+                            <h3>Cross-Platform Development</h3>
+                            <p>Utilized Flutter to create a web application that could be adapted for multiple platforms and devices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="back-to-projects lazy-section">
+            <div class="container">
+                <a href="index.html#projects" class="back-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5"></path>
+                        <path d="M12 19l-7-7 7-7"></path>
+                    </svg>
+                    Back to Projects
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Creative Developer. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Lazy loading for sections
+            const lazyElements = document.querySelectorAll('.lazy-section');
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            lazyElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            // Ensure all links are working
+            const allLinks = document.querySelectorAll('a');
+            allLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    if (this.getAttribute('href').startsWith('#')) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href').substring(1);
+                        scrollToSection(targetId);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Performance Monitoring of the IGDB API - Comparing RESTful vs gRPC">
+    <meta property="og:title" content="Performance Monitoring API Project | Creative Developer Portfolio">
+    <meta property="og:description" content="A research-based project comparing network performance of REST vs gRPC using Twitch's IGDB API for video game data">
+    <meta property="og:image" content="assets/performance-monitoring-preview.jpg">
+    <title>Performance Monitoring API Project | Creative Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="project-details.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body data-theme="dark">
+    <header class="header">
+        <nav class="nav">
+            <div class="logo"><a href="index.html">Portfolio</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#tech">Tech Stack</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <input type="checkbox" id="dark-mode-toggle" class="toggle-checkbox">
+                <label for="dark-mode-toggle" class="toggle-label">
+                    <span class="toggle-ball"></span>
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </label>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-hero lazy-section">
+            <div class="container">
+                <h1>🔬 Performance Monitoring of the IGDB API</h1>
+                <p class="project-tagline">A research-based project comparing network performance of REST vs gRPC using Twitch's IGDB API</p>
+                <div class="project-links">
+                    <a href="https://github.com/rahulpandharkar/API-Performance-Monitoring" target="_blank" class="project-link">
+                        <img src="assets/github-icon.svg" alt="GitHub" class="link-icon">
+                        Source Code
+                    </a>
+                    <a href="https://drive.google.com/file/d/1U82VPJ6dJvsW-pIZedshqFAuhgDY755g/view" target="_blank" class="project-link">
+                        <img src="assets/document-icon.svg" alt="Document" class="link-icon">
+                        Project Report
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-overview lazy-section">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <p>This academic research project analyzes the network performance of RESTful and gRPC API methods using the IGDB API (by Twitch) to fetch real-time video game data including names, screenshots, covers, and more.</p>
+                <p>It demonstrates how gRPC (with HTTP/2) outperforms REST in terms of speed, payload size, and efficiency, especially for large datasets.</p>
+                
+                <div class="project-screenshots">
+                    <h3>Screenshots</h3>
+                    <div class="screenshots-gallery">
+                        <div class="screenshot-item">
+                            <img src="assets/webpage.png" alt="Performance Monitoring Web Interface" class="screenshot-img" onclick="openImagePreview(this.src)">
+                            <p class="screenshot-caption">Web Interface Dashboard</p>
+                        </div>
+                        <div class="screenshot-item">
+                            <img src="assets/grpc_request.png" alt="gRPC Request Performance" class="screenshot-img" onclick="openImagePreview(this.src)">
+                            <p class="screenshot-caption">gRPC Request Performance</p>
+                        </div>
+                        <div class="screenshot-item">
+                            <img src="assets/rest_request.png" alt="REST Request Performance" class="screenshot-img" onclick="openImagePreview(this.src)">
+                            <p class="screenshot-caption">REST Request Performance</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </section>
+
+        <section class="key-features lazy-section">
+            <div class="container">
+                <h2>🔥 Key Highlights</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🧠</div>
+                        <h3>Performance Benchmarking</h3>
+                        <p>Comprehensive benchmarking between REST and gRPC protocols</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Request Analysis</h3>
+                        <p>Detailed timing & payload size comparisons using Postman</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔁</div>
+                        <h3>Data Retrieval</h3>
+                        <p>Efficiently fetching game titles, ratings, artwork, summaries, and more</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💻</div>
+                        <h3>Beginner Friendly</h3>
+                        <p>Built with basic HTML, CSS, JavaScript — perfect for newcomers</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📦</div>
+                        <h3>CORS Solution</h3>
+                        <p>Used proxy to handle CORS and IGDB authentication (OAuth)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="results-section lazy-section">
+            <div class="container">
+                <h2>📈 Performance Results</h2>
+                <div class="results-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Endpoints</th>
+                                <th>gRPC Time</th>
+                                <th>REST Time</th>
+                                <th>gRPC Size</th>
+                                <th>REST Size</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>11</td>
+                                <td>385ms</td>
+                                <td>1004ms</td>
+                                <td>2.39 KB</td>
+                                <td>3.75 KB</td>
+                            </tr>
+                            <tr>
+                                <td>25</td>
+                                <td>442ms</td>
+                                <td>870ms</td>
+                                <td>2.51 KB</td>
+                                <td>6.71 KB</td>
+                            </tr>
+                            <tr>
+                                <td>45</td>
+                                <td>676ms</td>
+                                <td>854ms</td>
+                                <td>10.81 KB</td>
+                                <td>19.38 KB</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="results-note">The data clearly shows how gRPC outperforms REST in both response time and payload size, especially as the number of endpoints increases.</p>
+            </div>
+        </section>
+
+        <section class="tech-stack-section lazy-section">
+            <div class="container">
+                <h2>🛠️ Tech Stack</h2>
+                <div class="tech-stack-grid">
+                    <div class="tech-item">
+                        <span class="tech-name">HTML, CSS, JavaScript</span>
+                        <p class="tech-desc">Core frontend technologies for building the interface and data visualization</p>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">IGDB API</span>
+                        <p class="tech-desc">Twitch's gaming database API with OAuth authentication for data retrieval</p>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Postman</span>
+                        <p class="tech-desc">Used for thorough API testing, performance monitoring, and timing analysis</p>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">RESTful API</span>
+                        <p class="tech-desc">Traditional REST approach with JSON data format for comparison baseline</p>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">gRPC with Protobuf</span>
+                        <p class="tech-desc">Modern protocol with HTTP/2 for efficient, compact data transmission</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="implementation-details lazy-section">
+            <div class="container">
+                <h2>💡 Project Details</h2>
+                <div class="implementation-content">
+                    <div class="implementation-text">
+                        <h3>Research Methodology</h3>
+                        <p>The project followed a structured approach to compare the two protocols:</p>
+                        <ul>
+                            <li>Set up both RESTful and gRPC endpoints to the IGDB API</li>
+                            <li>Created identical data requests with varying payload sizes</li>
+                            <li>Measured response times and payload sizes across multiple test runs</li>
+                            <li>Visualized the results through interactive comparisons</li>
+                        </ul>
+                        
+                        <h3>Takeaway & Learning</h3>
+                        <p>This project provided valuable insights beyond just frontend development:</p>
+                        <ul>
+                            <li>Understanding network protocols and their performance characteristics</li>
+                            <li>Learning about data serialization methods (JSON vs Protocol Buffers)</li>
+                            <li>Appreciating the importance of compression and efficient data transmission</li>
+                            <li>Gaining experience with OAuth authentication and API management</li>
+                            <li>Developing skills in performance testing and benchmarking</li>
+                        </ul>
+
+                        <h3>Future Scope</h3>
+                        <p>The insights from this project have significant implications for future work:</p>
+                        <ul>
+                            <li>gRPC with HTTP/2 is increasingly adopted by major companies like Netflix and Cisco</li>
+                            <li>The performance benefits become more pronounced with microservice architectures</li>
+                            <li>Understanding these protocols positions developers to create more scalable systems</li>
+                            <li>The techniques learned can be applied to real-time applications where performance is critical</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="back-to-projects lazy-section">
+            <div class="container">
+                <a href="index.html#projects" class="back-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5"></path>
+                        <path d="M12 19l-7-7 7-7"></path>
+                    </svg>
+                    Back to Projects
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Creative Developer. All rights reserved.</p>
+    </footer>
+
+    <div class="image-preview-overlay" id="imagePreviewOverlay" onclick="closeImagePreview()">
+        <span class="close-preview">&times;</span>
+        <img class="preview-image" id="previewImage">
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Lazy loading for sections
+            const lazyElements = document.querySelectorAll('.lazy-section');
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            lazyElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            // Ensure all links are working
+            const allLinks = document.querySelectorAll('a');
+            allLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    if (this.getAttribute('href').startsWith('#')) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href').substring(1);
+                        scrollToSection(targetId);
+                    }
+                });
+            });
+        });
+
+        // Image preview functionality
+        function openImagePreview(src) {
+            const overlay = document.getElementById('imagePreviewOverlay');
+            const previewImage = document.getElementById('previewImage');
+            
+            previewImage.src = src;
+            overlay.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeImagePreview() {
+            const overlay = document.getElementById('imagePreviewOverlay');
+            overlay.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+</body>
+</html> 
