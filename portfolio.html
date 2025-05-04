@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Creative Full Stack Developer Portfolio - Problem Solver and Innovator"
+    />
+    <meta property="og:title" content="Creative Developer Portfolio" />
+    <meta
+      property="og:description"
+      content="Explore my world of creative development and innovation"
+    />
+    <meta property="og:image" content="assets/og-image.jpg" />
+    <title>Ikrama Sunasra | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#tech">Tech Stack</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero lazy-section">
+        <div class="hero-content">
+            <h1 class="hero-title"><span id="typewriter"></span></h1>
+          <p class="hero-subtitle">
+            Full Stack Developer | Problem Solver | Innovator
+          </p>
+          <button
+            class="cta-button lazy-button"
+            onclick="scrollToSection('about')"
+          >
+            Explore My World
+          </button>
+        </div>
+      </section>
+
+      <section id="about" class="about lazy-section">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <p class="quote">
+            "Transforming ideas into reality through code and creativity."
+          </p>
+          <div class="about-details">
+            <div class="education">
+              <h3>Education</h3>
+              <p class="institution">K J Somaiya Institute of Technology</p>
+              <p class="degree">
+                B.Tech in Information Technology (Expected June 2025)
+              </p>
+              <p class="location">Mumbai, Maharashtra</p>
+              <p class="coursework">
+                • Relevant Coursework: Honours Degree in Blockchain
+              </p>
+            </div>
+            <div class="contact-info">
+              <h3>Contact</h3>
+              <p>📱 9821344877</p>
+              <p>
+                <a href="mailto:ikrama.s@somaiya.edu" class="email-link"
+                  >📧 ikrama.s@somaiya.edu</a
+                >
+              </p>
+              <div class="social-links">
+                <a
+                  href="https://github.com/ikrama-01"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <img
+                    src="assets/github-icon.svg"
+                    alt="GitHub"
+                    class="social-icon"
+                  />
+                  GitHub
+                </a>
+                <a
+                  href="https://linkedin.com/in/ikrama-sunasra-945289257"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <img
+                    src="assets/linkedin-icon.svg"
+                    alt="LinkedIn"
+                    class="social-icon"
+                  />
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects lazy-section">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-content">
+              <h3>Metro Management System</h3>
+              <p>
+                Secure metro ticketing backend with JWT-based role
+                authentication, enabling user wallet management, ticket booking,
+                and admin-only control for routes and stations.
+              </p>
+              <div class="project-tech-stack">
+                <span>Spring Boot</span>
+                <span>MySQL</span>
+                <span>JWT</span>
+                <span>REST APIs</span>
+                <span>DTO</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="metro-management-system.html" class="view-project-btn"
+                >View Details</a
+              >
+            </div>
+            <a
+              href="metro-management-system.html"
+              class="project-overlay-link"
+              aria-label="View Metro Management System project details"
+            ></a>
+          </div>
+          <div class="project-card">
+            <div class="project-content">
+              <h3>CalmConnect</h3>
+              <p>
+                VR-based mental health therapy app featuring meditation spaces,
+                ADHD training, and exposure therapy modules.
+              </p>
+              <div class="project-tech-stack">
+                <span>Unity</span>
+                <span>C#</span>
+                <span>Firebase</span>
+                <span>Android</span>
+                <span>VR</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="mental-health-therapy.html" class="view-project-btn"
+                >View Details</a
+              >
+            </div>
+            <a
+              href="mental-health-therapy.html"
+              class="project-overlay-link"
+              aria-label="View CalmConnect project details"
+            ></a>
+          </div>
+          <div class="project-card">
+            <div class="project-content">
+              <h3>API Performance Monitoring</h3>
+              <p>
+                Comparative analysis of REST vs gRPC performance using IGDB API,
+                featuring detailed metrics and visualization.
+              </p>
+              <div class="project-tech-stack">
+                <span>HTML/CSS/JS</span>
+                <span>IGDB API</span>
+                <span>Postman</span>
+                <span>Proxy Server</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="performance-monitoring.html" class="view-project-btn"
+                >View Details</a
+              >
+            </div>
+            <a
+              href="performance-monitoring.html"
+              class="project-overlay-link"
+              aria-label="View API Performance Monitoring project details"
+            ></a>
+          </div>
+          <div class="project-card">
+            <div class="project-content">
+              <h3>ParkEazy</h3>
+              <p>
+                Smart parking management system with automated gate security,
+                QR-based vehicle tracking, and real-time monitoring.
+              </p>
+              <div class="project-tech-stack">
+                <span>Flutter</span>
+                <span>Python</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>QR Code</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="parkeazy.html" class="view-project-btn">View Details</a>
+            </div>
+            <a
+              href="parkeazy.html"
+              class="project-overlay-link"
+              aria-label="View ParkEazy project details"
+            ></a>
+          </div>
+          <div class="project-card">
+            <div class="project-content">
+              <h3>Travel Companion App</h3>
+              <p>
+                Dynamic web application for exploring nearby restaurants,
+                hotels, and attractions with real-time weather updates and
+                interactive maps.
+              </p>
+              <div class="project-tech-stack">
+                <span>React</span>
+                <span>Material UI</span>
+                <span>Google Maps API</span>
+                <span>RapidAPI</span>
+                <span>Axios</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="travel-advisor.html" class="view-project-btn"
+                >View Details</a
+              >
+            </div>
+            <a
+              href="travel-advisor.html"
+              class="project-overlay-link"
+              aria-label="View Travel Companion App project details"
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="tech" class="tech-stack lazy-section">
+        <h2>Tech Stack & Experience</h2>
+        <div class="experience">
+          <h3>Work Experience</h3>
+          <div class="job">
+            <h4>
+              The University of Texas At Dallas - Naveen Jindal School of
+              Management
+            </h4>
+            <p class="position">Software Developer Intern (August 2023 – July 2024)</p>
+            <p class="location">Mumbai, Maharashtra</p>
+            <ul class="responsibilities">
+              <li>
+                Engineered and Integrated scalable full-stack features,
+                improving system efficiency and performance using React, Flask,
+                Firebase, and MongoDB.
+              </li>
+              <li>
+                Implemented comprehensive API functionalities and enhanced the
+                project with Firebase integration.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Languages</h3>
+            <div class="skills">
+              <span>Java</span>
+              <span>Python</span>
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>SQL</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Frameworks & Technologies</h3>
+            <div class="skills">
+              <span>Spring Boot</span>
+              <span>Spring MVC</span>
+              <span>Hibernate</span>
+              <span>React.js</span>
+              <span>Flask</span>
+              <span>Bootstrap</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Tools & Databases</h3>
+            <div class="skills">
+              <span>Git</span>
+              <span>Docker</span>
+              <span>CI/CD</span>
+              <span>MySQL</span>
+              <span>MongoDB</span>
+              <span>Firebase</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact lazy-section">
+        <h2>Get in Touch</h2>
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/mwplalll"
+          method="POST"
+        >
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Ikrama Sunasra. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const lazyElements = document.querySelectorAll(
+          ".lazy-section, .lazy-button"
+        );
+
+        const observer = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
+
+        lazyElements.forEach((element) => {
+          observer.observe(element);
+        });
+      });
+
+      const nameText = "Ikrama Sunasra";
+      const typewriter = document.getElementById("typewriter");
+      let index = 0;
+
+      function type() {
+        if (index < nameText.length) {
+          typewriter.innerHTML += nameText.charAt(index);
+          index++;
+          setTimeout(type, 150); // adjust speed here
+        }
+      }
+
+      window.addEventListener("load", type);
+    </script>
+  </body>
+</html>
